@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div style="flex-direction: row; margin: 0 0 20px 0;">
+          <i class="material-icons" style="font-size: 48px; color: rgb(63, 145, 252);"
+            >chat_bubble_outline</i
+          >
+          <h3 style="color: #666;">ChatLive</h3>
+        </div>
+        <form action="chat.html">
+          <div>
+            <input type="text" name="name" id="name" placeholder="Insert your NickName" />
+          </div>
+          <div>
+            <select name="room" id="room">
+              <option value="Room 1">Room 1</option>
+              <option value="Room 2">Room 2</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Join</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

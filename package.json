@@ -1,0 +1,13 @@
+{
+  "name": "mensagem",
+  "version": "1.0.0",
+  "description": "app de mensagem (chat)",
+  "main": "server.js",
+  "author": "Denis Lima",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "socket.io": "^2.3.0"
+  }
+}

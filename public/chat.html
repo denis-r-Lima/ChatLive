@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="./src/chat.css" />
+    <title>Mensagens</title>
+    <script src="socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+      integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side">
+        <div>
+          <div style="display: flex; flex-direction: row; align-items: center;">
+            <i class="material-icons" style="font-size: 28px; color: rgb(63, 145, 252);">forum</i>
+            <h4 style="color: #666;">Chat Room:</h4>
+          </div>
+          <div class="sideContent" id="room-id">
+            content
+          </div>
+        </div>
+        <div>
+          <div style="display: flex; flex-direction: row; align-items: center;">
+            <i class="material-icons" style="font-size: 28px; color: rgb(63, 145, 252);">people</i>
+            <h4 style="color: #666;">Online Users:</h4>
+          </div>
+          <div class="sideContent" id="users-list">
+            content
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <div id="headerLeft">
+            <i class="material-icons" style="font-size: 48px; color: rgb(63, 145, 252);"
+              >chat_bubble_outline</i
+            >
+            <h3 style="color: #666;">ChatLive</h3>
+          </div>
+          <div id="headerRight">
+            <button onclick="window.location.href='index.html'" class="quitButton">Log Out</button>
+          </div>
+        </div>
+        <div id="screen"></div>
+        <form>
+          <div id="inputs">
+            <input type="text" placeholder="Message" id="mensagem" />
+            <button type="submit" class="sendButton">
+              <i class="material-icons" style="color: #fff; font-size: 18px;">send</i> Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./src/chat.js"></script>
+  </body>
+</html>
